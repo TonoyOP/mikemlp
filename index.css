@@ -1,0 +1,514 @@
+
+
+@font-face {
+    font-family: MainFont;
+    src: url(Assets/Fonts/ShadowsIntoLight-Regular.ttf);
+}
+
+/*======== BOILER PLATE  ========*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Segoe UI';
+
+} 
+
+body,html{
+
+    width: 100%;
+    height: 100%; 
+    
+ 
+}
+
+/* ==== NAVBAR CODE ====*/
+
+.nav{
+
+    width: 100%;
+    height: 78px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    padding: 0 13% ;
+    gap: 5vw;
+}
+
+.navList ul li a, .navBtn a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+
+.navList ul li a{
+
+    color:#ffffffce;
+}
+
+.navList ul li a:hover{
+
+    color: white;
+}
+
+.logo img{
+
+    width: 17vw;
+    height: 1.8vw;
+}
+
+.navList ul{
+
+    display: flex;
+    gap: 6vw;
+}
+
+.navBtn{
+
+    padding: 10px 30px;
+
+    border: 1px solid white;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+
+
+/* ==== MAIN CODE ====*/
+
+.i-main{
+
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.i-sub-sec{
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    width: 40%;
+    padding: 0 5%;
+    padding-top:5% ;
+    text-align: center;
+    color:  #ffffffce;
+ 
+    
+}
+
+.house{
+
+    width: 90%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.418)), url(Assets/house1.webp);
+    background-position: center;
+    background-size: cover;
+    border: 15px solid rgb(37, 37, 37);
+    cursor: crosshair;
+    user-select: none;
+    transition: background 3s;
+}
+
+.house:hover{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.418)), url(Assets/house2.jfif);
+
+}
+
+
+
+
+
+
+.intro-txt{
+
+    font-size: 10vw;
+    font-weight: 900;
+    padding: 3% 5%;
+    padding-right: 0;
+    height: 100%;
+    width: 60%;
+    
+}
+
+#i-txt{
+
+    color: rgb(220, 0, 0);
+}
+#i2-txt, #i3-txt{
+
+    font-size: 5vw ;
+    color: rgb(220, 0, 0);
+
+
+}
+
+#i2-txt{
+
+    /*background: -webkit-linear-gradient(336deg, rgb(155, 27, 190) 0%, rgba(253,29,29,1) 50%, rgba(131,58,180,1)  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+
+#i3-txt{
+
+   /* background: -webkit-linear-gradient(336deg, rgb(211, 26, 17) 0%, rgb(106, 15, 225) 60%, rgba(131, 58, 180, 0.695)  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+
+
+/* ==== INTRODUCTION SECTION CODE ====*/
+
+.line{
+
+    width: 100%;
+}
+.line img{
+
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.intro-sec{
+    width: 100%;
+    height: 150vh;
+    padding-top: 4%;
+    position: relative;
+    z-index: 3;
+
+    
+}
+
+.intro-sec h1{
+
+    color: rgb(220, 0, 0);
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+    font-family: MainFont;
+    letter-spacing: 5px;
+    font-size: 6vw;
+    font-weight: bolder;
+    
+}
+
+.intro-main {
+
+    width: 100%;
+    height: 80%;
+    margin-top: 4%;
+    background: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.508)), url(Assets/guyclip.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: center;
+    padding: 5% 10%;
+    box-shadow: 50px 50px 300px black;
+    padding-bottom: 0;
+    user-select: none;
+    transition: all 1s;
+ 
+    
+}
+
+.intro-sub-main{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5vw;
+    height: 95%;
+    width: 100%;
+    
+}
+
+.intro-main img{
+
+    width: 42vw;
+    height: 35vw;
+    filter: drop-shadow(25px 25px 50px black);
+    overflow: hidden;
+
+   
+}
+
+.intro-main-txt{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    gap: 1%;
+
+}
+
+.intro-main-txt h1{
+
+    color: white;
+}
+
+
+.intro-main-txt h1{
+
+    font-family: MainFont;
+    font-size: 4.5vw;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.intro-main-txt h2{
+
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.663);
+}
+
+.flipBtn{
+
+    text-align: center;
+    font-size: 2.5vw;
+    color: white;
+    padding: 1px 2px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 45%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* SWIPER CODE */
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-top: 8% !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    width: 20vw !important;
+    height: 25vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border-radius: 20px !important;
+    box-shadow: 20px 20px 50px black;
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    width: 100%;
+    height: 45%;
+  
+
+  }
+
+  .swiper-slide p{
+
+    color: black;
+    padding: 1% 2%;
+    font-weight: 550;
+
+  }
+
+  .swiper-slide #mainP{
+
+    font-size: 2vw;
+    font-weight: bolder;
+  }
+
+  .swiper-slide #secP{
+
+    font-size: 1.2vw;
+  }
+/* ==== COURSE SECTION CODE ====*/
+
+.course-sec{
+
+    width: 100%;
+    height: 117vh;
+    position: relative;
+    z-index: 2;
+    margin-top: 10%;
+    padding-top: 10% ;
+    background: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.508)), url(Assets/test1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: center;
+
+}
+
+.course-sec h1{
+
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+}
+
+
+.main-cs{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==== FINAL SECTION CODE ====*/
+
+.final-sec{
+
+    width: 100%;
+    height: 130vh;
+    background-color: gray;
+    background: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.508)), url(Assets/villa2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: center;
+}
+
+.final-sec h1{
+
+    text-align: center;
+    font-size: 6vw;
+    padding-top: 10%;
+    color: rgb(208, 0, 0);
+}
+
+.main-final-sec{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5% ;
+ 
+}
+
+.final-sec-box{
+
+    width: 28vw;
+    height: 35vw;
+    background-color: #e3e0e0;
+    border-radius: 20px;
+    padding: 2%;
+    padding-top: 1%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 10px 10px 30px black;
+   
+}
+
+.final-sec-box h1{
+
+    font-size: 2vw;
+    color: black;
+}
+
+.final-sec-box h2{
+
+    font-weight: 500;
+    text-align: center;
+}
+
+.f-list{
+
+    padding: 0 5%;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+#cost{
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 2vw;
+    color: rgb(190, 0, 0);
+}
+
+#Ebtn{
+
+    text-decoration: none;
+    text-align: center;
+    color: rgb(200, 0, 0);
+    padding: 10px 25px;
+    font-size: 1.5vw;
+    margin: 0 25% ;
+    border: 4px solid rgb(200, 0, 0);
+    border-radius: 20px;
+    transition: all .8s;
+}
+
+#Ebtn:hover{
+
+    color: white;
+    background-color: rgb(200, 0, 0);
+}
+
+
+/* ==== footer CODE ====*/
+
+.footer{
+
+    width: 100%;
+    height: 25vh;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+/* OTHERS */
+
+.rm{
+
+    display: none;
+}
+
+.intro-alt-main{
+
+    display: none;
+}
+
+.xxm .intro-alt-main{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.xxm .intro-alt-main .alt-main-txt{
+
+    display: flex;
+    margin: 0 20%;
+    flex-direction: column;
+    gap: 3vh;
+    font-size: 1.8vw;
+    color: white;
+}
+
